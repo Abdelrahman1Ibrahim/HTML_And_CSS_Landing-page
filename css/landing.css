@@ -1,0 +1,306 @@
+/* Strat global Rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .special{
+    text-align: center;
+    max-width: 100%;
+  }
+  .special h2{
+    letter-spacing: -1px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+ .special p{
+    width: 500px;
+    max-width: 100%;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: hsl(210, 10%, 33%);
+    font-size: 15px;
+    margin-inline: auto;
+}
+.download {
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+ .download a{
+     text-decoration: none;
+     color: white;
+     display: inline-block;
+     width: 200px;
+     text-align: center;
+     padding: 15px;
+     margin-right: 10px;
+     border-radius: 50px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
+     font-size: 14px;
+     cursor: pointer;
+ }
+ .download a:nth-child(1){
+    background-color: hsl(171, 66%, 44%);
+  }
+   .download a:nth-child(2){
+    background-color: hsl(233, 100%, 69%);
+  }
+/* End global Rules */
+/* Start header */
+header{
+min-height: 100vh;
+width: 100%;
+position: relative;
+background-image: url(../images/bg-header-desktop.png);
+background-size: cover;
+}
+header .container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+header .container .logo img{
+    margin-top: 60px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+header .container h1{
+    font-size: 33px;
+    letter-spacing: -1px;
+}
+header .container > p {
+width: 520px;
+max-width: 100%;
+line-height: 1.7;
+margin-bottom: 30px;
+color: hsl(210, 10%, 33%);
+font-size: 15px;
+text-align: center;
+}
+@media(max-width:768px){
+  .download a{
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+/* End Header */
+/* Start search */
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     gap: 5%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.search .imge{
+flex-basis: 50%;
+}
+.search .imge img{
+ max-width: 100%;
+}
+
+.search .boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    text-align: center;
+}
+.search .boxes .box h3{
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+.search .boxes .box p{
+    max-width: 350px;
+    color: hsl(210, 10%, 33%);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-inline: auto;
+}
+@media(max-width:991px){
+    .search{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .search .imge{
+        flex-basis: 70%;
+        margin-inline: 25px;
+ }
+}
+/* End search */
+/* Start acess */
+.acess{
+    margin-top: 80px;
+    text-align: center;
+}
+.acess .container{
+    position: relative;
+}
+
+.acess .container .imge{
+    width: 75%;
+    margin-inline: auto;
+}
+.acess .container .imge img{
+max-width: 100%;    
+}
+@media(max-width:768px){
+    .acess .container .imge{
+        width: 100%;
+    }
+}
+.acess .container .text h3{
+    letter-spacing: -1px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.acess .container .text p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: hsl(210, 10%, 33%);
+}
+/* End acess */
+/* Start planes */
+.planes{
+    margin-block: 70px;
+    padding-bottom: 70px;
+}
+.planes .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+}
+.planes .container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.planes .container .box .imge{
+    margin-top: 20px;
+}
+.planes .container .box p{
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.7;
+    font-size: 15px;
+}
+/* End planes */
+/* Start Companies */
+.Companies{
+    margin-bottom: 40px;
+}
+.Companies .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+    gap: 30px;
+    align-items: center;
+}
+.Companies .container .company{
+    margin-inline: auto;
+    width: fit-content;
+}
+/* End Companies */
+/* Strat ios */
+.ios{
+    padding-top: 60px;
+}
+.ios .container h2{
+    letter-spacing: -1px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.ios .container p{
+    width: 500px;
+    max-width: 100%;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: hsl(210, 10%, 33%);
+    font-size: 15px;
+    text-align: center;
+    margin-inline: auto;
+}
+.ios .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* End ios */
+/* Start footer */
+footer{
+    padding: 20px;
+    background-color: hsl(206, 9%, 85%);
+}
+footer .container{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media(max-width:767px){
+    footer .container{
+        flex-direction: column;
+    }
+}
+footer .container .logo{
+    width: 80px;
+}
+footer .container .logo img{
+  max-width: 100%;
+}
+footer .container .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 15px;
+}
+@media(max-width:767px){
+    footer .container .contact{
+        flex-direction: column;
+    }
+}
+
+footer .container .social a{
+    display: inline-block;  
+    margin-left: 15px;
+}
+
+/* End footer */
